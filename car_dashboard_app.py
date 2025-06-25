@@ -1,4 +1,3 @@
-
 import streamlit as st
 import pandas as pd
 import seaborn as sns
@@ -33,7 +32,7 @@ def dashboard():
     app_header()
 
     # Load data
-    df = pd.read_csv("UPDATED_CAR_DATA.csv")
+    df = pd.read_csv("LARGE_CAR_DATA.csv")
     df["brand"] = df["name"].apply(lambda x: x.split(" ")[0])
 
     st.markdown("### 📝 Enter Car Details to Filter")
